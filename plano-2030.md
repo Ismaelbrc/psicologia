@@ -4,11 +4,13 @@ Rascunho inicial da grade 9x9 para a meta central de 2030. Preencher/ajustar dir
 
 > **Aviso**: as ações de saúde abaixo são hábitos gerais de estilo de vida, não prescrição médica. Com hipercolesterolemia familiar, síndrome metabólica e alto risco cardiovascular, o tratamento medicamentoso e as metas de LDL/HbA1c precisam ser definidos e acompanhados com cardiologista/endocrinologista — este documento organiza hábitos, não substitui o tratamento.
 
-## Meta central (2030)
+## Meta central (7 de abril de 2030)
 
-> Aniversário de 40 anos próspero, com toda a família na Grécia, com todos os marcadores de saúde positivos.
+> 7 de abril de 2030: aniversário de 40 anos próspero, com toda a família na Grécia, com todos os marcadores de saúde positivos.
 
-Contexto de partida (2026): pré-diabetes, colesterol alto, hipercolesterolemia familiar, síndrome metabólica, alto risco cardiovascular.
+Contexto de partida (agosto de 2026): pré-diabetes, colesterol alto, hipercolesterolemia familiar, síndrome metabólica, alto risco cardiovascular.
+
+Faltam cerca de 1.324 dias (~43 meses, ~14 revisões trimestrais) até a data.
 
 ## As 8 áreas de apoio
 
