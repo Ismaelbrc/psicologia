@@ -1,0 +1,712 @@
+{
+ "nos": [
+  {
+   "id": "cf88",
+   "tipo": "norma",
+   "nome": "Constituição Federal de 1988",
+   "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm"
+  },
+  {
+   "id": "ec132_2023",
+   "tipo": "norma",
+   "nome": "EC 132/2023 (Reforma Tributária do consumo)",
+   "vigencia": {
+    "inicio": "2023-12-21"
+   },
+   "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm"
+  },
+  {
+   "id": "ctn",
+   "tipo": "norma",
+   "nome": "Código Tributário Nacional (Lei 5.172/1966)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm"
+  },
+  {
+   "id": "lc214_2025",
+   "tipo": "norma",
+   "nome": "LC 214/2025 (IBS, CBS e Imposto Seletivo)",
+   "vigencia": {
+    "inicio": "2025-01-16"
+   },
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+  },
+  {
+   "id": "lc116_2003",
+   "tipo": "norma",
+   "nome": "LC 116/2003 (ISS)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm"
+  },
+  {
+   "id": "lc157_2016",
+   "tipo": "norma",
+   "nome": "LC 157/2016 (alíquota mínima do ISS)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp157.htm"
+  },
+  {
+   "id": "lc123_2006",
+   "tipo": "norma",
+   "nome": "LC 123/2006 (Simples Nacional)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm"
+  },
+  {
+   "id": "lei7713_1988",
+   "tipo": "norma",
+   "nome": "Lei 7.713/1988 (IR pessoa física)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l7713.htm"
+  },
+  {
+   "id": "lei7739_1989",
+   "tipo": "norma",
+   "nome": "Lei 7.739/1989",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l7739.htm"
+  },
+  {
+   "id": "lei8212_1991",
+   "tipo": "norma",
+   "nome": "Lei 8.212/1991 (Custeio da Seguridade Social)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+  },
+  {
+   "id": "lei8981_1995",
+   "tipo": "norma",
+   "nome": "Lei 8.981/1995",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8981.htm"
+  },
+  {
+   "id": "lei9249_1995",
+   "tipo": "norma",
+   "nome": "Lei 9.249/1995 (IRPJ/CSLL - lucro presumido)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"
+  },
+  {
+   "id": "lei9250_1995",
+   "tipo": "norma",
+   "nome": "Lei 9.250/1995 (IRPF)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9250.htm"
+  },
+  {
+   "id": "lei9718_1998",
+   "tipo": "norma",
+   "nome": "Lei 9.718/1998 (PIS/Cofins cumulativo)",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9718compilada.htm"
+  },
+  {
+   "id": "lei9532_1997",
+   "tipo": "norma",
+   "nome": "Lei 9.532/1997",
+   "descricao": "Art. 23: doação/herança por valor de mercado gera ganho de capital sobre a diferença em relação ao custo."
+  },
+  {
+   "id": "lei10637_2002",
+   "tipo": "norma",
+   "nome": "Lei 10.637/2002 (PIS não cumulativo)"
+  },
+  {
+   "id": "lei10833_2003",
+   "tipo": "norma",
+   "nome": "Lei 10.833/2003 (Cofins não cumulativa)"
+  },
+  {
+   "id": "lei10257_2001",
+   "tipo": "norma",
+   "nome": "Lei 10.257/2001 (Estatuto da Cidade)"
+  },
+  {
+   "id": "lei10931_2004",
+   "tipo": "norma",
+   "nome": "Lei 10.931/2004 (Patrimônio de afetação e RET)",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.931.htm"
+  },
+  {
+   "id": "lei11196_2005",
+   "tipo": "norma",
+   "nome": "Lei 11.196/2005 (Lei do Bem)",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+  },
+  {
+   "id": "lei12546_2011",
+   "tipo": "norma",
+   "nome": "Lei 12.546/2011 (CPRB - desoneração da folha)"
+  },
+  {
+   "id": "lei14973_2024",
+   "tipo": "norma",
+   "nome": "Lei 14.973/2024 (reoneração gradual da folha; atualização de valor de imóveis)"
+  },
+  {
+   "id": "rir2018",
+   "tipo": "norma",
+   "nome": "Decreto 9.580/2018 (Regulamento do Imposto de Renda)",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"
+  },
+  {
+   "id": "in_rfb_2021_2021",
+   "tipo": "norma",
+   "nome": "IN RFB 2.021/2021 (contribuições previdenciárias em obras de construção civil)"
+  },
+  {
+   "id": "in_rfb_2110_2022",
+   "tipo": "norma",
+   "nome": "IN RFB 2.110/2022 (normas gerais de contribuições previdenciárias, incl. retenção)"
+  },
+  {
+   "id": "in_rfb_1700_2017",
+   "tipo": "norma",
+   "nome": "IN RFB 1.700/2017 (IRPJ/CSLL)"
+  },
+  {
+   "id": "cf88:art156_i",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156, I (IPTU)",
+   "descricao": "Compete aos Municípios instituir imposto sobre propriedade predial e territorial urbana."
+  },
+  {
+   "id": "cf88:art156_ii",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156, II (ITBI)",
+   "descricao": "Transmissão inter vivos, a qualquer título, por ato oneroso, de bens imóveis e direitos reais sobre imóveis, exceto os de garantia."
+  },
+  {
+   "id": "cf88:art156_iii",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156, III (ISS)",
+   "descricao": "Serviços de qualquer natureza, definidos em lei complementar, não compreendidos no art. 155, II."
+  },
+  {
+   "id": "cf88:art156_p1",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156, §1º (IPTU progressivo; atualização da base)",
+   "descricao": "IPTU pode ser progressivo em razão do valor e ter alíquotas diferentes por localização e uso; EC 132 incluiu inciso III permitindo atualização da base de cálculo pelo Executivo, conforme critérios da lei municipal."
+  },
+  {
+   "id": "cf88:art156_p2_i",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156, §2º, I (imunidade do ITBI na integralização)",
+   "descricao": "ITBI não incide na incorporação ao patrimônio de PJ em realização de capital, nem em fusão/incorporação/cisão/extinção, salvo se a atividade preponderante for compra e venda, locação ou arrendamento de imóveis."
+  },
+  {
+   "id": "cf88:art155_i",
+   "tipo": "dispositivo",
+   "nome": "CF art. 155, I (ITCMD)",
+   "descricao": "Transmissão causa mortis e doação de quaisquer bens ou direitos."
+  },
+  {
+   "id": "cf88:art155_p1",
+   "tipo": "dispositivo",
+   "nome": "CF art. 155, §1º (ITCMD - competência e progressividade)",
+   "descricao": "Imóveis: competência do Estado da situação do bem (inciso I). EC 132 tornou o ITCMD obrigatoriamente progressivo em razão do valor (inciso VI)."
+  },
+  {
+   "id": "cf88:art182_p4",
+   "tipo": "dispositivo",
+   "nome": "CF art. 182, §4º (IPTU progressivo no tempo)",
+   "descricao": "Solo urbano não edificado, subutilizado ou não utilizado: IPTU progressivo no tempo, após parcelamento/edificação compulsórios."
+  },
+  {
+   "id": "cf88:art156a",
+   "tipo": "dispositivo",
+   "nome": "CF art. 156-A (IBS)",
+   "descricao": "Imposto sobre bens e serviços, de competência compartilhada entre Estados, DF e Municípios. Incluído pela EC 132/2023."
+  },
+  {
+   "id": "cf88:art195_v",
+   "tipo": "dispositivo",
+   "nome": "CF art. 195, V (CBS)",
+   "descricao": "Contribuição sobre bens e serviços, federal. Incluída pela EC 132/2023."
+  },
+  {
+   "id": "ctn:art32",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 32 (fato gerador do IPTU)",
+   "descricao": "Propriedade, domínio útil ou posse de imóvel localizado na zona urbana do Município."
+  },
+  {
+   "id": "ctn:art33",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 33 (base de cálculo do IPTU)",
+   "descricao": "Valor venal do imóvel."
+  },
+  {
+   "id": "ctn:art34",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 34 (contribuinte do IPTU)",
+   "descricao": "Proprietário, titular do domínio útil ou possuidor a qualquer título."
+  },
+  {
+   "id": "ctn:art35",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 35 (fato gerador do imposto sobre transmissão)",
+   "descricao": "Transmissão da propriedade ou do domínio útil de imóveis e de direitos reais sobre imóveis."
+  },
+  {
+   "id": "ctn:art38",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 38 (base de cálculo do ITBI)",
+   "descricao": "Valor venal dos bens ou direitos transmitidos."
+  },
+  {
+   "id": "ctn:art130",
+   "tipo": "dispositivo",
+   "nome": "CTN art. 130 (sub-rogação no adquirente)",
+   "descricao": "Créditos de impostos sobre a propriedade (ex.: IPTU) sub-rogam-se na pessoa do adquirente, salvo prova de quitação no título."
+  },
+  {
+   "id": "lc116_2003:lista_7_02",
+   "tipo": "dispositivo",
+   "nome": "LC 116 lista, item 7.02 (construção civil)",
+   "descricao": "Execução, por administração, empreitada ou subempreitada, de obras de construção civil, hidráulica ou elétrica e semelhantes, exceto o fornecimento de mercadorias produzidas pelo prestador fora do local da prestação (sujeito ao ICMS)."
+  },
+  {
+   "id": "lc116_2003:lista_7_05",
+   "tipo": "dispositivo",
+   "nome": "LC 116 lista, item 7.05 (reparação/reforma)",
+   "descricao": "Reparação, conservação e reforma de edifícios, estradas, pontes, portos e congêneres, exceto o fornecimento de mercadorias produzidas pelo prestador fora do local da prestação (sujeito ao ICMS)."
+  },
+  {
+   "id": "lc116_2003:lista_10_05",
+   "tipo": "dispositivo",
+   "nome": "LC 116 lista, item 10.05 (intermediação de bens)",
+   "descricao": "Agenciamento, corretagem ou intermediação de bens móveis ou imóveis, não abrangidos em outros itens ou subitens."
+  },
+  {
+   "id": "lc116_2003:lista_17_12",
+   "tipo": "dispositivo",
+   "nome": "LC 116 lista, item 17.12 (administração em geral)",
+   "descricao": "Administração em geral, inclusive de bens e negócios de terceiros.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc116_2003:art3",
+   "tipo": "dispositivo",
+   "nome": "LC 116 art. 3º (local da incidência)",
+   "descricao": "Regra geral: estabelecimento do prestador. Exceções incluem o local da execução da obra (itens 7.02, 7.19) e o local das edificações objeto de reparação/reforma (item 7.05)."
+  },
+  {
+   "id": "lc116_2003:art7_p2_i",
+   "tipo": "dispositivo",
+   "nome": "LC 116 art. 7º, §2º, I (dedução de materiais)",
+   "descricao": "Não se incluem na base de cálculo do ISS o valor dos materiais fornecidos pelo prestador nos serviços dos itens 7.02 e 7.05."
+  },
+  {
+   "id": "lc116_2003:art8",
+   "tipo": "dispositivo",
+   "nome": "LC 116 art. 8º, II (alíquota máxima 5%)"
+  },
+  {
+   "id": "lc116_2003:art8a",
+   "tipo": "dispositivo",
+   "nome": "LC 116 art. 8º-A (alíquota mínima 2%)",
+   "fontes": [
+    "lc157_2016"
+   ]
+  },
+  {
+   "id": "lei7713_1988:art8",
+   "tipo": "dispositivo",
+   "nome": "Lei 7.713 art. 8º (carnê-leão)",
+   "descricao": "Recolhimento mensal obrigatório pela PF que receber de outra PF (ou do exterior) rendimentos não tributados na fonte, como aluguéis."
+  },
+  {
+   "id": "lei7713_1988:art18",
+   "tipo": "dispositivo",
+   "nome": "Lei 7.713 art. 18 (redução para imóveis antigos)",
+   "descricao": "Redução percentual do ganho de capital para imóveis adquiridos até 1988, conforme o ano de aquisição; imóveis adquiridos até 1969 ficam integralmente fora da tributação."
+  },
+  {
+   "id": "lei7739_1989:art14",
+   "tipo": "dispositivo",
+   "nome": "Lei 7.739 art. 14 (deduções do aluguel)",
+   "descricao": "Não integram o rendimento tributável de aluguéis, quando o ônus for do locador: impostos, taxas e emolumentos sobre o bem; aluguel pago por imóvel sublocado; despesas de cobrança/recebimento (ex.: taxa da imobiliária); despesas de condomínio.",
+   "status": "verificar"
+  },
+  {
+   "id": "lei8981_1995:art21",
+   "tipo": "dispositivo",
+   "nome": "Lei 8.981 art. 21 (alíquotas do ganho de capital PF)",
+   "descricao": "Redação da Lei 13.259/2016: 15% até R$ 5 mi; 17,5% de R$ 5 mi a 10 mi; 20% de R$ 10 mi a 30 mi; 22,5% acima de R$ 30 mi."
+  },
+  {
+   "id": "lei9250_1995:art23",
+   "tipo": "dispositivo",
+   "nome": "Lei 9.250 art. 23 (isenção do imóvel único até R$ 440 mil)",
+   "descricao": "Isento o ganho na alienação do único imóvel do contribuinte, por valor até R$ 440.000, se não houve outra alienação nos últimos 5 anos."
+  },
+  {
+   "id": "lei11196_2005:art39",
+   "tipo": "dispositivo",
+   "nome": "Lei 11.196 art. 39 (isenção por reinvestimento em 180 dias)",
+   "descricao": "Isento o ganho da PF na venda de imóvel residencial cujo produto seja aplicado, em até 180 dias, na aquisição de imóvel residencial no país. Benefício utilizável uma vez a cada 5 anos."
+  },
+  {
+   "id": "lei11196_2005:art40",
+   "tipo": "dispositivo",
+   "nome": "Lei 11.196 art. 40 (fatores de redução FR1 e FR2)",
+   "descricao": "Fatores de redução do ganho de capital na alienação de imóveis por PF, aplicados conforme o tempo desde a aquisição."
+  },
+  {
+   "id": "lei10931_2004:art4",
+   "tipo": "dispositivo",
+   "nome": "Lei 10.931 art. 4º (RET)",
+   "descricao": "Incorporação sob patrimônio de afetação: pagamento unificado de IRPJ, CSLL, PIS e Cofins de 4% sobre as receitas mensais; 1% para unidades residenciais de interesse social (programas como o MCMV), nos termos do §6º."
+  },
+  {
+   "id": "lei8212_1991:art30_vi",
+   "tipo": "dispositivo",
+   "nome": "Lei 8.212 art. 30, VI (solidariedade do dono da obra)",
+   "descricao": "Proprietário, incorporador, dono da obra ou condômino respondem solidariamente com o construtor pelas contribuições previdenciárias da obra."
+  },
+  {
+   "id": "lei8212_1991:art30_viii",
+   "tipo": "dispositivo",
+   "nome": "Lei 8.212 art. 30, VIII (obra residencial econômica sem mão de obra assalariada)",
+   "descricao": "Nenhuma contribuição é devida sobre construção residencial unifamiliar, de uso próprio, tipo econômico, executada sem mão de obra assalariada, observadas as exigências do regulamento."
+  },
+  {
+   "id": "lei8212_1991:art31",
+   "tipo": "dispositivo",
+   "nome": "Lei 8.212 art. 31 (retenção de 11%)",
+   "descricao": "Contratante de serviços executados mediante cessão de mão de obra, inclusive trabalho temporário, retém 11% do valor bruto da nota fiscal ou fatura."
+  },
+  {
+   "id": "lei8212_1991:art47_ii",
+   "tipo": "dispositivo",
+   "nome": "Lei 8.212 art. 47, II (CND para averbação de obra)",
+   "descricao": "Exige-se documento comprobatório de inexistência de débito do proprietário do imóvel no registro de imóveis, na averbação de obra de construção civil."
+  },
+  {
+   "id": "lc123_2006:art17_xv",
+   "tipo": "dispositivo",
+   "nome": "LC 123 art. 17, XV (vedação: locação de imóveis próprios)",
+   "descricao": "Não pode optar pelo Simples a ME/EPP que realize locação de imóveis próprios, exceto quando se referir a prestação de serviços tributados pelo ISS."
+  },
+  {
+   "id": "lc123_2006:art18_p5c",
+   "tipo": "dispositivo",
+   "nome": "LC 123 art. 18, §5º-C (Anexo IV)",
+   "descricao": "Construção de imóveis e obras de engenharia em geral, inclusive sob a forma de subempreitada, execução de projetos e serviços de paisagismo, bem como decoração de interiores: Anexo IV, com a CPP recolhida fora do DAS."
+  },
+  {
+   "id": "lei9249_1995:art15",
+   "tipo": "dispositivo",
+   "nome": "Lei 9.249 art. 15 (presunção do lucro presumido)",
+   "descricao": "Regra geral de 8% sobre a receita bruta; 32% para prestação de serviços em geral (§1º, III). A atividade imobiliária de venda de imóveis (incorporação, loteamento, construção para venda, revenda) usa 8%."
+  },
+  {
+   "id": "lei9249_1995:art20",
+   "tipo": "dispositivo",
+   "nome": "Lei 9.249 art. 20 (base presumida da CSLL)",
+   "descricao": "12% em geral; 32% para as atividades do art. 15, §1º, III."
+  },
+  {
+   "id": "lc214_2025:art251",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251 (operações com bens imóveis)",
+   "descricao": "Regime específico do IBS/CBS para: alienação de imóveis (inclusive da incorporação e do parcelamento do solo); cessão e atos onerosos translativos/constitutivos de direitos reais; locação, cessão onerosa e arrendamento; administração e intermediação; serviços de construção civil.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:contribuinte_pf",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (PF como contribuinte nas operações com imóveis)",
+   "descricao": "A PF que loca, cede ou arrenda imóveis passa a ser contribuinte obrigatório do IBS/CBS se, no ano-calendário anterior, teve receita dessas operações acima de R$ 240 mil E mais de 3 imóveis distintos. Na alienação, a PF é contribuinte a partir de determinado número de imóveis alienados no ano, ou ao alienar imóvel que ela própria construiu nos 5 anos anteriores. Conferir os limites exatos no texto oficial.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:redutor_ajuste",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (redutor de ajuste)",
+   "descricao": "Na alienação, a base do IBS/CBS é reduzida por um redutor de ajuste vinculado ao imóvel (valor de aquisição mais tributos não creditáveis). Para imóveis já detidos antes de 2027, admite-se valor de referência. Evita tributar o estoque de valor anterior à reforma.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:redutor_social",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (redutor social)",
+   "descricao": "Alienação de imóvel residencial novo: redutor de R$ 100 mil por unidade; lote residencial: R$ 30 mil. Locação residencial: redutor de R$ 600 por imóvel por mês. Valores corrigidos pelo IPCA.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:reducao_aliquota_imoveis",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (redução de alíquotas nas operações com imóveis)",
+   "descricao": "Redução de 50% das alíquotas do IBS/CBS nas operações com bens imóveis em geral (alienação, construção civil, entre outras) e de 70% na locação, cessão onerosa e arrendamento. Conferir o enquadramento exato de administração e intermediação.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:transicao_locacao",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (transição de contratos de locação anteriores)",
+   "descricao": "Contratos de locação firmados antes da publicação da LC (16/01/2025), com prazo determinado e registrados/informados até o prazo legal, podem optar por regime transitório com alíquota reduzida sobre a receita bruta (3,65% no texto aprovado) até o fim do contrato, respeitado limite temporal.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:transicao_incorporacao",
+   "tipo": "dispositivo",
+   "nome": "LC 214 (transição de incorporações e loteamentos)",
+   "descricao": "Incorporações sob RET e parcelamentos do solo iniciados antes de 2029 podem optar por recolher IBS/CBS por regime transitório com alíquota sobre a receita bruta, em vez do regime regular.",
+   "status": "verificar"
+  },
+  {
+   "id": "lc214_2025:cronograma",
+   "tipo": "dispositivo",
+   "nome": "Cronograma de transição (EC 132 / LC 214)",
+   "descricao": "2026: teste com CBS 0,9% e IBS 0,1%, compensáveis. 2027: CBS plena; PIS/Cofins extintos; IPI zerado (exceto ZFM). 2027–2028: IBS 0,1%. 2029–2032: ICMS e ISS reduzidos em 10 p.p. por ano (90%, 80%, 70%, 60%) e IBS crescente. 2033: extinção de ICMS e ISS; IBS pleno.",
+   "status": "verificar",
+   "fontes": [
+    "ec132_2023"
+   ]
+  }
+ ],
+ "arestas": [
+  {
+   "de": "cf88:art156_i",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art156_ii",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art156_iii",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art156_p1",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art156_p2_i",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art155_i",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art155_p1",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art182_p4",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art156a",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "cf88:art195_v",
+   "rel": "parte_de",
+   "para": "cf88"
+  },
+  {
+   "de": "ctn:art32",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "ctn:art33",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "ctn:art34",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "ctn:art35",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "ctn:art38",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "ctn:art130",
+   "rel": "parte_de",
+   "para": "ctn"
+  },
+  {
+   "de": "lc116_2003:lista_7_02",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:lista_7_05",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:lista_10_05",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:lista_17_12",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:art3",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:art7_p2_i",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:art8",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lc116_2003:art8a",
+   "rel": "parte_de",
+   "para": "lc116_2003"
+  },
+  {
+   "de": "lei7713_1988:art8",
+   "rel": "parte_de",
+   "para": "lei7713_1988"
+  },
+  {
+   "de": "lei7713_1988:art18",
+   "rel": "parte_de",
+   "para": "lei7713_1988"
+  },
+  {
+   "de": "lei7739_1989:art14",
+   "rel": "parte_de",
+   "para": "lei7739_1989"
+  },
+  {
+   "de": "lei8981_1995:art21",
+   "rel": "parte_de",
+   "para": "lei8981_1995"
+  },
+  {
+   "de": "lei9250_1995:art23",
+   "rel": "parte_de",
+   "para": "lei9250_1995"
+  },
+  {
+   "de": "lei11196_2005:art39",
+   "rel": "parte_de",
+   "para": "lei11196_2005"
+  },
+  {
+   "de": "lei11196_2005:art40",
+   "rel": "parte_de",
+   "para": "lei11196_2005"
+  },
+  {
+   "de": "lei10931_2004:art4",
+   "rel": "parte_de",
+   "para": "lei10931_2004"
+  },
+  {
+   "de": "lei8212_1991:art30_vi",
+   "rel": "parte_de",
+   "para": "lei8212_1991"
+  },
+  {
+   "de": "lei8212_1991:art30_viii",
+   "rel": "parte_de",
+   "para": "lei8212_1991"
+  },
+  {
+   "de": "lei8212_1991:art31",
+   "rel": "parte_de",
+   "para": "lei8212_1991"
+  },
+  {
+   "de": "lei8212_1991:art47_ii",
+   "rel": "parte_de",
+   "para": "lei8212_1991"
+  },
+  {
+   "de": "lc123_2006:art17_xv",
+   "rel": "parte_de",
+   "para": "lc123_2006"
+  },
+  {
+   "de": "lc123_2006:art18_p5c",
+   "rel": "parte_de",
+   "para": "lc123_2006"
+  },
+  {
+   "de": "lei9249_1995:art15",
+   "rel": "parte_de",
+   "para": "lei9249_1995"
+  },
+  {
+   "de": "lei9249_1995:art20",
+   "rel": "parte_de",
+   "para": "lei9249_1995"
+  },
+  {
+   "de": "lc214_2025:art251",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:contribuinte_pf",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:redutor_ajuste",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:redutor_social",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:reducao_aliquota_imoveis",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:transicao_locacao",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:transicao_incorporacao",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:cronograma",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "ec132_2023",
+   "rel": "altera",
+   "para": "cf88"
+  },
+  {
+   "de": "lc157_2016",
+   "rel": "altera",
+   "para": "lc116_2003"
+  }
+ ]
+}
