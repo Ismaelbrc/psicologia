@@ -9,6 +9,8 @@ from datetime import date
 
 from .grafo import ErroGrafo, Grafo
 
+NORMAS_PADRAO = ("lc214_2025", "lc116_2003", "ctn")
+
 MARCA = {"consolidado": "", "verificar": " [verificar]", "controverso": " [controverso]"}
 
 AVISO = (
@@ -137,6 +139,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validar")
     sub.add_parser("stats")
     sub.add_parser("pendencias", help="itens a conferir no texto oficial")
+    ip = sub.add_parser("ingerir-padrao", help="baixa e ingere LC 214, LC 116 e CTN do Planalto")
+    ip.add_argument("--normas", nargs="+", default=list(NORMAS_PADRAO))
+    cf = sub.add_parser("conferir", help="confere itens curados contra o texto ingerido")
+    cf.add_argument("--saida", default="relatorio_conferencia.md")
     i = sub.add_parser("ingerir", help="ingere HTML do Planalto (URL ou arquivo)")
     i.add_argument("fonte")
     i.add_argument("--norma", required=True, help="id da norma, ex.: lc214_2025")
@@ -180,6 +186,32 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps(g.estatisticas(), ensure_ascii=False, indent=2))
         elif args.cmd == "pendencias":
             cmd_pendencias(g)
+        elif args.cmd == "ingerir-padrao":
+            from .ingestao import ingerir
+
+            falhas = 0
+            for norma in args.normas:
+                url = g.no(norma).get("url")
+                try:
+                    dados = ingerir(url, norma)
+                    n = sum(1 for x in dados["nos"] if x["tipo"] == "dispositivo")
+                    print(f"{norma}: {n} dispositivos ({url})")
+                except Exception as ex:  # rede, HTML inesperado
+                    falhas += 1
+                    print(f"{norma}: FALHOU ({ex}) — baixe {url} manualmente e use 'ingerir <arquivo> --norma {norma}'", file=sys.stderr)
+            return 1 if falhas else 0
+        elif args.cmd == "conferir":
+            from pathlib import Path
+
+            from .conferencia import carregar_checagens, conferir, relatorio
+
+            resultados = conferir(g, carregar_checagens())
+            Path(args.saida).write_text(relatorio(g, resultados), encoding="utf-8")
+            resumo: dict[str, int] = {}
+            for r in resultados:
+                resumo[r.status] = resumo.get(r.status, 0) + 1
+            print(f"relatório em {args.saida}: " + ", ".join(f"{k}={v}" for k, v in resumo.items()))
+            return 1 if resumo.get("ARTIGO DIVERGENTE") or resumo.get("NÃO ENCONTRADO") else 0
         elif args.cmd == "ingerir":
             from .ingestao import ingerir
 

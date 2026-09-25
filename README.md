@@ -88,4 +88,18 @@ python -m tributarista explicar 'lc214_2025#art251'
 
 Cada artigo vira um nó `norma#artN` em `tributarista/dados/ingeridos/`. Trechos tachados, que o Planalto usa para redação revogada, são descartados.
 
-O próximo passo natural é conferir os itens `verificar` contra esses textos e ligar cada dispositivo curado ao artigo ingerido correspondente.
+### Conferir os itens pendentes contra o texto
+
+```bash
+./scripts/conferir_leis.sh        # ingerir-padrao (LC 214, LC 116, CTN) + validar + conferir
+```
+
+O script gera `relatorio_conferencia.md`. Para cada item curado listado em `tributarista/conferencia.json`, ele procura o artigo que reúne os termos da afirmação e classifica o resultado:
+
+- **ARTIGO DIVERGENTE:** os termos existem, mas em outro artigo. O número do artigo no grafo provavelmente está errado.
+- **NÃO ENCONTRADO:** nenhum artigo reúne os termos. A afirmação pode estar errada ou redigida de outro jeito.
+- **OK:** os termos estão no artigo esperado, e o relatório mostra o trecho. **Isso não prova a afirmação**; só diz onde ler.
+
+Depois de ler o trecho e corrigir o JSON em `tributarista/dados/`, troque `"status": "verificar"` por `"consolidado"`. O relatório também lista as pendências que dependem de normas fora dessas três leis (IN RFB 2.021/2021, Lei 7.739/1989, RIR/2018, LC 123...).
+
+Se o download falhar, salve o HTML pelo navegador e rode `python -m tributarista ingerir arquivo.htm --norma lc214_2025`.

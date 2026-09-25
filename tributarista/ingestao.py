@@ -64,8 +64,28 @@ def html_para_texto(html: str) -> str:
     return "\n".join(ln for ln in linhas if ln)
 
 
+RE_ANEXO = re.compile(r"^\s*(ANEXO\b|Lista de servi[çc]os anexa)", re.MULTILINE | re.IGNORECASE)
+
+
 def extrair_artigos(texto: str) -> list[tuple[str, str]]:
-    """Retorna [(rotulo, texto)] com rótulo como '8', '8-A', '251'."""
+    """Retorna [(rotulo, texto)] com rótulo como '8', '8-A', '251' e, se houver, 'anexo'.
+
+    Anexos (ex.: lista de serviços da LC 116) vêm depois do último artigo e
+    são separados para não inflarem o texto dele.
+    """
+    anexo = ""
+    primeiro = RE_ARTIGO.search(texto)
+    if primeiro:
+        m_anexo = RE_ANEXO.search(texto, primeiro.end())
+        if m_anexo:
+            texto, anexo = texto[: m_anexo.start()], texto[m_anexo.start() :].strip()
+    artigos = _artigos(texto)
+    if anexo:
+        artigos.append(("anexo", anexo))
+    return artigos
+
+
+def _artigos(texto: str) -> list[tuple[str, str]]:
     marcas = list(RE_ARTIGO.finditer(texto))
     artigos: dict[str, str] = {}
     for i, m in enumerate(marcas):
@@ -89,7 +109,7 @@ def decodificar(conteudo: bytes) -> str:
 
 def ler_fonte(fonte: str) -> str:
     if re.match(r"^https?://", fonte):
-        req = urllib.request.Request(fonte, headers={"User-Agent": "tributarista/0.1"})
+        req = urllib.request.Request(fonte, headers={"User-Agent": "Mozilla/5.0 (compatible; tributarista/0.1)"})
         with urllib.request.urlopen(req, timeout=60) as r:
             return decodificar(r.read())
     return decodificar(Path(fonte).read_bytes())
@@ -103,8 +123,10 @@ def ingerir(fonte: str, norma_id: str, nome_norma: str | None = None, destino: P
     if nome_norma:
         nos.append({"id": norma_id, "tipo": "norma", "nome": nome_norma, "url": fonte})
     for rotulo, corpo in artigos:
-        id_ = f"{norma_id}#art{rotulo}"
-        nos.append({"id": id_, "tipo": "dispositivo", "nome": f"{norma_id} art. {rotulo}", "descricao": corpo, "ingerido": True})
+        anexo = rotulo == "anexo"
+        id_ = f"{norma_id}#anexo" if anexo else f"{norma_id}#art{rotulo}"
+        nome = f"{norma_id} anexo" if anexo else f"{norma_id} art. {rotulo}"
+        nos.append({"id": id_, "tipo": "dispositivo", "nome": nome, "descricao": corpo, "ingerido": True})
         arestas.append({"de": id_, "rel": "parte_de", "para": norma_id})
     dados = {"fonte": fonte, "nos": nos, "arestas": arestas}
     destino = destino or (DADOS_DIR / "ingeridos")
