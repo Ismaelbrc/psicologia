@@ -140,3 +140,17 @@ class TestCLI(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRevendaPF(unittest.TestCase):
+    def setUp(self):
+        self.g = Grafo.carregar()
+
+    def test_flip_pf_tem_gatilhos_e_nao_equipara_pj(self):
+        r = self.g.consultar("revenda_imovel_reformado", "pf", date(2027, 6, 1))
+        cbs = [a for a in r["incide"] if a["de"] == "cbs" and "lc214_2025:art251_p1_iii" in a.get("fontes", [])]
+        self.assertTrue(cbs)
+        self.assertIn("irpj", tributos(r, "nao_incide"))
+        self.assertIn("irpf", tributos(r))  # herdado da alienação
+        rel = {a["para"] for a in r["relacionados"]}
+        self.assertTrue({"reforma_como_construcao", "pf_vs_pj_revenda"} <= rel)

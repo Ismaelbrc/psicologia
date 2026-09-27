@@ -94,6 +94,11 @@ def cmd_explicar(g: Grafo, id_: str) -> None:
         print(f"  {n['url']}")
     if n.get("fontes"):
         print("  fontes: " + "; ".join(_nome(g, f) for f in n["fontes"]))
+    ev = n.get("evidencia")
+    if ev:
+        print(f"  evidência: {ev.get('nivel', '')}" + (f" — pendente: {ev['pendente']}" if ev.get("pendente") else ""))
+        for u in ev.get("fontes", []):
+            print(f"    - {u}")
     sai, entra = g.saindo(id_), g.entrando(id_)
     if sai:
         print("  →")

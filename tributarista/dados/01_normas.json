@@ -408,8 +408,12 @@
    "id": "lc214_2025:contribuinte_pf",
    "tipo": "dispositivo",
    "nome": "LC 214 (PF como contribuinte nas operações com imóveis)",
-   "descricao": "A PF que loca, cede ou arrenda imóveis passa a ser contribuinte obrigatório do IBS/CBS se, no ano-calendário anterior, teve receita dessas operações acima de R$ 240 mil E mais de 3 imóveis distintos. Na alienação, a PF é contribuinte a partir de determinado número de imóveis alienados no ano, ou ao alienar imóvel que ela própria construiu nos 5 anos anteriores. Conferir os limites exatos no texto oficial.",
-   "status": "verificar"
+   "descricao": "Resumo dos gatilhos da PF no art. 251 (detalhe nos nós art251_p1_i a art251_p3). Locação: no ano anterior, receita > R$ 240 mil E mais de 3 imóveis. Alienação: mais de 3 imóveis alienados no ano anterior, adquiridos há menos de 5 anos; OU mais de 1 imóvel construído pelo próprio alienante nos 5 anos anteriores. Ultrapassar o limite no próprio ano já torna tributável a operação excedente (§2º). Fora dos gatilhos, a PF não paga IBS/CBS.",
+   "status": "verificar",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes (2026-09-27)",
+    "pendente": "conferir no texto oficial"
+   }
   },
   {
    "id": "lc214_2025:redutor_ajuste",
