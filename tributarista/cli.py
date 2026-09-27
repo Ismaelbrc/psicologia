@@ -148,12 +148,24 @@ def main(argv: list[str] | None = None) -> int:
     ip.add_argument("--normas", nargs="+", default=list(NORMAS_PADRAO))
     cf = sub.add_parser("conferir", help="confere itens curados contra o texto ingerido")
     cf.add_argument("--saida", default="relatorio_conferencia.md")
+    from .simulador import adicionar_premissas
+
+    sm = sub.add_parser("simular", help="simulador de investimento imobiliário na PF (premissas editáveis)")
+    sm.add_argument("modo", choices=["imovel", "estrategias", "empate-saque"])
+    sm.add_argument("--com-saque", action="store_true", help="modo imovel: faz o saque no --mes-saque")
+    sm.add_argument("--eventos", action="store_true", help="modo estrategias: lista compras, saques e vendas")
+    sm.add_argument("--json", action="store_true")
+    adicionar_premissas(sm)
     i = sub.add_parser("ingerir", help="ingere HTML do Planalto (URL ou arquivo)")
     i.add_argument("fonte")
     i.add_argument("--norma", required=True, help="id da norma, ex.: lc214_2025")
     i.add_argument("--nome", help="nome da norma, se ainda não existir no grafo")
 
     args = p.parse_args(argv)
+    if args.cmd == "simular":
+        from .simulador import executar
+
+        return executar(args)
     g = Grafo.carregar()
 
     try:

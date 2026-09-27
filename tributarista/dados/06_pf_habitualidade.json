@@ -1,73 +1,378 @@
 {
-  "_pesquisa": {
-    "data": "2026-09-27",
-    "pergunta": "A PF que compra, reforma e revende imóveis vira contribuinte de IBS/CBS? A partir de quando uma empresa faz mais sentido?",
-    "metodo": "Texto oficial (Planalto) inacessível no ambiente. Estrutura do art. 251 reconstruída por fontes secundárias convergentes (listadas em 'evidencia' de cada nó). Números de parágrafo/inciso e a regra dos 5 anos no inciso II precisam ser confirmados com 'python -m tributarista conferir' após ingerir a LC 214.",
-    "conclusao": "Gatilho por quantidade é anual (mais de 3 imóveis alienados no ano-calendário, adquiridos há menos de 5 anos): ~1 a 2 revendas por ano não o aciona. O risco real para flips é o gatilho de 'mais de 1 imóvel construído pelo próprio alienante em 5 anos' SE a reforma for tratada como construção; a lei, até onde apurado, não define isso. IRPF: revenda de imóveis prontos por PF não gera equiparação a PJ; segue ganho de capital."
+ "_pesquisa": {
+  "data": "2026-09-27",
+  "pergunta": "A PF que compra, reforma e revende imóveis vira contribuinte de IBS/CBS? A partir de quando uma empresa faz mais sentido?",
+  "metodo": "Texto oficial (Planalto) inacessível no ambiente. Estrutura do art. 251 reconstruída por fontes secundárias convergentes (listadas em 'evidencia' de cada nó). Números de parágrafo/inciso e a regra dos 5 anos no inciso II precisam ser confirmados com 'python -m tributarista conferir' após ingerir a LC 214.",
+  "conclusao": "Gatilho por quantidade é anual (mais de 3 imóveis alienados no ano-calendário, adquiridos há menos de 5 anos): ~1 a 2 revendas por ano não o aciona. O risco real para flips é o gatilho de 'mais de 1 imóvel construído pelo próprio alienante em 5 anos' SE a reforma for tratada como construção; a lei, até onde apurado, não define isso. IRPF: revenda de imóveis prontos por PF não gera equiparação a PJ; segue ganho de capital."
+ },
+ "nos": [
+  {
+   "id": "lc227_2026",
+   "tipo": "norma",
+   "nome": "LC 227/2026 (ajustes na LC 214)",
+   "descricao": "Lei complementar de 2026 que ajustou a LC 214, entre outros pontos esclarecendo a aplicação mensal do redutor social da locação. Segundo as fontes consultadas, não alterou a estrutura dos gatilhos da PF no art. 251.",
+   "status": "verificar",
+   "evidencia": {
+    "nivel": "fonte secundária única",
+    "fontes": [
+     "https://www.barbieriadvogados.com/en/pessoas-fisicas-como-contribuintes-quando-o-aluguel-vira-atividade-empresarial/"
+    ]
+   }
   },
-  "nos": [
-    {"id": "lc227_2026", "tipo": "norma", "nome": "LC 227/2026 (ajustes na LC 214)", "descricao": "Lei complementar de 2026 que ajustou a LC 214, entre outros pontos esclarecendo a aplicação mensal do redutor social da locação. Segundo as fontes consultadas, não alterou a estrutura dos gatilhos da PF no art. 251.", "status": "verificar",
-     "evidencia": {"nivel": "fonte secundária única", "fontes": ["https://www.barbieriadvogados.com/en/pessoas-fisicas-como-contribuintes-quando-o-aluguel-vira-atividade-empresarial/"]}},
-
-    {"id": "lc214_2025:art251_p1_i", "tipo": "dispositivo", "nome": "LC 214 art. 251, §1º, I (PF locadora contribuinte)", "status": "verificar",
-     "descricao": "A PF é contribuinte do regime regular de IBS/CBS na locação, cessão onerosa e arrendamento se, no ano-calendário anterior, cumprir as DUAS condições: (a) receita total dessas operações acima de R$ 240.000; e (b) mais de 3 imóveis distintos. O valor é atualizado pelo IPCA.",
-     "evidencia": {"nivel": "fontes secundárias convergentes", "fontes": ["https://www.jusbrasil.com.br/topicos/802635196/art-251-da-lei-complementar-n-214-de-16-de-janeiro-de-2025", "https://camaraportuguesa-rj.com.br/lc-214-25-pessoa-fisica-que-aluga-imoveis-como-contribuinte-do-ibs-e-da-cbs-e-a-inscricao-no-cnpj-a-partir-de-1o-de-janeiro-de-2027/"]}},
-    {"id": "lc214_2025:art251_p1_ii", "tipo": "dispositivo", "nome": "LC 214 art. 251, §1º, II (PF alienante: mais de 3 imóveis no ano)", "status": "verificar",
-     "descricao": "A PF é contribuinte na alienação ou cessão de direitos se, no ano-calendário anterior, tiver alienado ou cedido mais de 3 imóveis distintos. Só contam imóveis que estavam no patrimônio há menos de 5 anos, contados da aquisição (§3º). Não há limite de valor.",
-     "evidencia": {"nivel": "fontes secundárias convergentes", "fontes": ["https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/", "https://www.migalhas.com.br/depeso/425546/pessoa-fisica-paga-ibs-cbs-na-locacao-e-venda-de-imoveis", "https://jurishand.com/lei-complementar-214-de-16-janeiro-2025/artigo-251/paragrafo-1"]}},
-    {"id": "lc214_2025:art251_p1_iii", "tipo": "dispositivo", "nome": "LC 214 art. 251, §1º, III (PF alienante: mais de 1 imóvel construído por ela em 5 anos)", "status": "verificar",
-     "descricao": "A PF é contribuinte se alienar ou ceder direitos sobre mais de 1 imóvel construído pelo próprio alienante nos 5 anos anteriores à alienação. Basta a 2ª venda de imóvel construído por ela em 5 anos, sem limite de valor. Mira o 'construtor PF' que atua como incorporador informal.",
-     "evidencia": {"nivel": "fontes secundárias convergentes", "fontes": ["https://tagdlaw.com.br/reforma-tributaria-tributacao-da-pessoa-fisica-construtora-de-imoveis-para-venda/", "https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/"]}},
-    {"id": "lc214_2025:art251_p2", "tipo": "dispositivo", "nome": "LC 214 art. 251, §2º (gatilho no mesmo ano)", "status": "verificar",
-     "descricao": "A PF também é contribuinte no MESMO ano-calendário nas alienações que ultrapassarem os limites dos incisos II e III do §1º. Não é preciso esperar o ano seguinte: a operação que excede o limite já é tributada (ex.: a 4ª venda do ano, ou a 2ª de imóvel construído por ela).",
-     "evidencia": {"nivel": "fonte secundária", "fontes": ["https://www.jusbrasil.com.br/topicos/802635196/art-251-da-lei-complementar-n-214-de-16-de-janeiro-de-2025"]}},
-    {"id": "lc214_2025:art251_p3", "tipo": "dispositivo", "nome": "LC 214 art. 251, §3º (corte de 5 anos de posse)", "status": "verificar",
-     "descricao": "Para o gatilho de quantidade (inciso II), só contam imóveis que estavam no patrimônio há menos de 5 anos, contados da aquisição. Quem vende imóveis antigos (mais de 5 anos) não se enquadra, qualquer que seja a quantidade.",
-     "evidencia": {"nivel": "fontes secundárias convergentes; uma fonte cita erroneamente 'art. 151, §3º'", "fontes": ["https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/"]}},
-    {"id": "rir2018:art162", "tipo": "dispositivo", "nome": "RIR/2018 art. 162 (equiparação da PF à PJ)", "status": "verificar",
-     "descricao": "Equipara a PF à PJ nas operações imobiliárias de incorporação e loteamento. Sem registro de incorporação, também equipara quem constrói edificação com mais de 2 unidades ou executa loteamento e começa a vender antes de 60 meses do registro da construção ou da aceitação das obras. A simples compra, reforma e revenda de imóveis prontos não está entre essas hipóteses.",
-     "evidencia": {"nivel": "fontes secundárias convergentes (inclui Perguntas e Respostas da RFB)", "fontes": ["https://www.portaltributario.com.br/irpf/em-que-condicoes-a-pessoa-fisica-e-equiparada-a.htm", "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/ecf/perguntas-e-respostas-pessoa-juridica-2021-arquivos/capitulo-iii-equiparacoes-da-pessoa-fisica-2021.pdf"]}},
-
-    {"id": "revenda_imovel_reformado", "tipo": "operacao", "nome": "Compra, reforma e revenda de imóvel (flip)", "sinonimos": ["flip", "revenda", "comprar reformar vender", "house flipping"],
-     "descricao": "Compra de imóvel pronto, reforma para valorizar e revenda em prazo curto."},
-
-    {"id": "reforma_como_construcao", "tipo": "conceito", "nome": "A reforma torna o imóvel 'construído pelo próprio alienante'?", "status": "controverso",
-     "descricao": "Ponto decisivo para o flip em PF, e em aberto: não localizamos definição legal na LC 214. Leitura restritiva: construção é edificação nova (habite-se, averbação de construção), então reforma não conta. Leitura ampla: reforma com acréscimo de área ou retrofit substancial, averbada no registro, conta como construção. Enquanto não houver regulamento ou texto conferido, trate como risco: a 2ª revenda em 5 anos de imóvel com reforma averbada pode tornar a PF contribuinte.",
-     "evidencia": {"nivel": "não resolvido", "fontes": []}},
-    {"id": "pf_vs_pj_revenda", "tipo": "conceito", "nome": "Revenda de imóveis: quando a PJ passa a valer mais do que a PF", "status": "verificar",
-     "descricao": "Exemplo (venda de R$ 500 mil, ganho de ~R$ 140 mil). PF não contribuinte: só IRPF de 15% sobre o ganho, menos fatores de redução (~R$ 21 mil); isenção de 180 dias uma vez a cada 5 anos. PF contribuinte: soma IBS/CBS sobre a margem (50% de redução e redutor de ajuste; ~R$ 15–20 mil estimados) e ultrapassa ~R$ 35–40 mil. PJ no lucro presumido com atividade imobiliária: IRPJ/CSLL presumidos (8%/12% da receita, ~R$ 11 mil) mais PIS/Cofins de 3,65% até 2026 (~R$ 18 mil) ou IBS/CBS a partir de 2027 (~R$ 15–20 mil), total de ~R$ 26–31 mil. Conclusão: enquanto a PF não aciona os gatilhos, ela é mais barata. A PJ passa a compensar quando a PF vira contribuinte (4+ revendas por ano, ou 2+ imóveis 'construídos' em 5 anos) ou quando se quer escala e separação de risco. As alíquotas de IBS/CBS são estimativas (alíquota de referência ainda não fixada)."}
-  ],
-  "arestas": [
-    {"de": "lc214_2025:art251_p1_i", "rel": "parte_de", "para": "lc214_2025"},
-    {"de": "lc214_2025:art251_p1_ii", "rel": "parte_de", "para": "lc214_2025"},
-    {"de": "lc214_2025:art251_p1_iii", "rel": "parte_de", "para": "lc214_2025"},
-    {"de": "lc214_2025:art251_p2", "rel": "parte_de", "para": "lc214_2025"},
-    {"de": "lc214_2025:art251_p3", "rel": "parte_de", "para": "lc214_2025"},
-    {"de": "rir2018:art162", "rel": "parte_de", "para": "rir2018"},
-    {"de": "lc227_2026", "rel": "altera", "para": "lc214_2025", "status": "verificar"},
-    {"de": "lc214_2025:art251_p3", "rel": "relacionado", "para": "lc214_2025:art251_p1_ii", "nota": "O corte de 5 anos restringe o gatilho de quantidade."},
-    {"de": "lc214_2025:art251_p2", "rel": "relacionado", "para": "lc214_2025:art251_p1_ii"},
-    {"de": "lc214_2025:art251_p2", "rel": "relacionado", "para": "lc214_2025:art251_p1_iii"},
-    {"de": "lc214_2025:art251_p1_i", "rel": "relacionado", "para": "lc214_2025:contribuinte_pf"},
-    {"de": "lc214_2025:art251_p1_ii", "rel": "relacionado", "para": "lc214_2025:contribuinte_pf"},
-    {"de": "lc214_2025:art251_p1_iii", "rel": "relacionado", "para": "lc214_2025:contribuinte_pf"},
-
-    {"de": "revenda_imovel_reformado", "rel": "especializa", "para": "alienacao_imovel"},
-
-    {"de": "cbs", "rel": "incide_em", "para": "revenda_imovel_reformado", "condicao": {"perfis": ["pf"]}, "vigencia": {"inicio": "2026-01-01"}, "status": "verificar",
-     "nota": "Só se a PF acionar um gatilho: (1) mais de 3 revendas no ano-calendário de imóveis adquiridos há menos de 5 anos; ou (2) mais de 1 imóvel 'construído pelo próprio alienante' em 5 anos (ver: reforma conta como construção?). A operação que ultrapassa o limite já é tributada no mesmo ano. Ex.: 6 revendas em 5 anos (~1–2 por ano) NÃO acionam o gatilho (1).",
-     "fontes": ["lc214_2025:art251_p1_ii", "lc214_2025:art251_p1_iii", "lc214_2025:art251_p2", "lc214_2025:art251_p3"]},
-    {"de": "ibs", "rel": "incide_em", "para": "revenda_imovel_reformado", "condicao": {"perfis": ["pf"]}, "vigencia": {"inicio": "2026-01-01"}, "status": "verificar",
-     "nota": "Mesmos gatilhos da CBS. Se incidir: redução de 50% e redutor de ajuste sobre o valor de aquisição.",
-     "fontes": ["lc214_2025:art251_p1_ii", "lc214_2025:art251_p1_iii", "lc214_2025:art251_p2", "lc214_2025:art251_p3"]},
-    {"de": "irpj", "rel": "nao_incide_em", "para": "revenda_imovel_reformado", "condicao": {"perfis": ["pf"]}, "status": "verificar",
-     "nota": "A PF que compra, reforma e revende imóveis prontos não é equiparada a PJ para o IR. A equiparação alcança incorporação, loteamento e construção de mais de 2 unidades vendidas em até 60 meses. O lucro segue como ganho de capital no IRPF.",
-     "fontes": ["rir2018:art162"]},
-
-    {"de": "revenda_imovel_reformado", "rel": "relacionado", "para": "reforma_como_construcao", "nota": "Decide se o gatilho de 1 imóvel 'construído' se aplica. Evite averbar acréscimo de área em flips seguidos até haver definição."},
-    {"de": "revenda_imovel_reformado", "rel": "relacionado", "para": "pf_vs_pj_revenda"},
-    {"de": "revenda_imovel_reformado", "rel": "relacionado", "para": "isencao_reinvestimento_180d", "nota": "Só uma vez a cada 5 anos: nos demais flips, paga-se 15% sobre o ganho (com fatores de redução)."},
-    {"de": "revenda_imovel_reformado", "rel": "relacionado", "para": "custo_benfeitorias", "nota": "A reforma com nota fiscal entra no custo e reduz o ganho de capital."},
-    {"de": "revenda_imovel_reformado", "rel": "exige", "para": "gcap", "condicao": {"perfis": ["pf"]}}
-  ]
+  {
+   "id": "lc214_2025:art251_p1_i",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251, §1º, I (PF locadora contribuinte)",
+   "status": "verificar",
+   "descricao": "A PF é contribuinte do regime regular de IBS/CBS na locação, cessão onerosa e arrendamento se, no ano-calendário anterior, cumprir as DUAS condições: (a) receita total dessas operações acima de R$ 240.000; e (b) mais de 3 imóveis distintos. O valor é atualizado pelo IPCA.",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes",
+    "fontes": [
+     "https://www.jusbrasil.com.br/topicos/802635196/art-251-da-lei-complementar-n-214-de-16-de-janeiro-de-2025",
+     "https://camaraportuguesa-rj.com.br/lc-214-25-pessoa-fisica-que-aluga-imoveis-como-contribuinte-do-ibs-e-da-cbs-e-a-inscricao-no-cnpj-a-partir-de-1o-de-janeiro-de-2027/"
+    ]
+   }
+  },
+  {
+   "id": "lc214_2025:art251_p1_ii",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251, §1º, II (PF alienante: mais de 3 imóveis no ano)",
+   "status": "verificar",
+   "descricao": "A PF é contribuinte na alienação ou cessão de direitos se, no ano-calendário anterior, tiver alienado ou cedido mais de 3 imóveis distintos. Só contam imóveis que estavam no patrimônio há menos de 5 anos, contados da aquisição (§3º). Não há limite de valor.",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes",
+    "fontes": [
+     "https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/",
+     "https://www.migalhas.com.br/depeso/425546/pessoa-fisica-paga-ibs-cbs-na-locacao-e-venda-de-imoveis",
+     "https://jurishand.com/lei-complementar-214-de-16-janeiro-2025/artigo-251/paragrafo-1"
+    ]
+   }
+  },
+  {
+   "id": "lc214_2025:art251_p1_iii",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251, §1º, III (PF alienante: mais de 1 imóvel construído por ela em 5 anos)",
+   "status": "verificar",
+   "descricao": "A PF é contribuinte se alienar ou ceder direitos sobre mais de 1 imóvel construído pelo próprio alienante nos 5 anos anteriores à alienação. Basta a 2ª venda de imóvel construído por ela em 5 anos, sem limite de valor. Mira o 'construtor PF' que atua como incorporador informal.",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes",
+    "fontes": [
+     "https://tagdlaw.com.br/reforma-tributaria-tributacao-da-pessoa-fisica-construtora-de-imoveis-para-venda/",
+     "https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/"
+    ]
+   }
+  },
+  {
+   "id": "lc214_2025:art251_p2",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251, §2º (gatilho no mesmo ano)",
+   "status": "verificar",
+   "descricao": "A PF também é contribuinte no MESMO ano-calendário nas alienações que ultrapassarem os limites dos incisos II e III do §1º. Não é preciso esperar o ano seguinte: a operação que excede o limite já é tributada (ex.: a 4ª venda do ano, ou a 2ª de imóvel construído por ela).",
+   "evidencia": {
+    "nivel": "fonte secundária",
+    "fontes": [
+     "https://www.jusbrasil.com.br/topicos/802635196/art-251-da-lei-complementar-n-214-de-16-de-janeiro-de-2025"
+    ]
+   }
+  },
+  {
+   "id": "lc214_2025:art251_p3",
+   "tipo": "dispositivo",
+   "nome": "LC 214 art. 251, §3º (corte de 5 anos de posse)",
+   "status": "verificar",
+   "descricao": "Para o gatilho de quantidade (inciso II), só contam imóveis que estavam no patrimônio há menos de 5 anos, contados da aquisição. Quem vende imóveis antigos (mais de 5 anos) não se enquadra, qualquer que seja a quantidade.",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes; uma fonte cita erroneamente 'art. 151, §3º'",
+    "fontes": [
+     "https://sinafic.org.br/2025/11/18/venda-de-imoveis-por-pessoas-fisicas-quando-havera-incidencia-de-ibs-e-cbs/"
+    ]
+   }
+  },
+  {
+   "id": "rir2018:art162",
+   "tipo": "dispositivo",
+   "nome": "RIR/2018 art. 162 (equiparação da PF à PJ)",
+   "status": "verificar",
+   "descricao": "Equipara a PF à PJ nas operações imobiliárias de incorporação e loteamento. Sem registro de incorporação, também equipara quem constrói edificação com mais de 2 unidades ou executa loteamento e começa a vender antes de 60 meses do registro da construção ou da aceitação das obras. A simples compra, reforma e revenda de imóveis prontos não está entre essas hipóteses.",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes (inclui Perguntas e Respostas da RFB)",
+    "fontes": [
+     "https://www.portaltributario.com.br/irpf/em-que-condicoes-a-pessoa-fisica-e-equiparada-a.htm",
+     "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/ecf/perguntas-e-respostas-pessoa-juridica-2021-arquivos/capitulo-iii-equiparacoes-da-pessoa-fisica-2021.pdf"
+    ]
+   }
+  },
+  {
+   "id": "revenda_imovel_reformado",
+   "tipo": "operacao",
+   "nome": "Compra, reforma e revenda de imóvel (flip)",
+   "sinonimos": [
+    "flip",
+    "revenda",
+    "comprar reformar vender",
+    "house flipping"
+   ],
+   "descricao": "Compra de imóvel pronto, reforma para valorizar e revenda em prazo curto."
+  },
+  {
+   "id": "reforma_como_construcao",
+   "tipo": "conceito",
+   "nome": "A reforma torna o imóvel 'construído pelo próprio alienante'?",
+   "status": "controverso",
+   "descricao": "Resposta parcial do regulamento (art. 382, §6º): construção de parte da edificação conta como 'construído pelo alienante'. Consequências para o flip em PF: (1) ampliação ou acréscimo de área (novo cômodo, pavimento, edícula, área averbada) é construção de parte da edificação e muito provavelmente conta; 2 vendas assim em 5 anos tornam a PF contribuinte. (2) Reforma sem acréscimo (acabamento, pisos, elétrica, hidráulica, pintura, troca de layout sem nova área) tem boa defesa de que não é 'construção', mas o termo não está definido e o fisco pode ler de forma ampla. (3) Retrofit pesado (demolição interna, reconstrução de partes estruturais) fica na zona cinzenta, com risco alto. Ainda em aberto: o marco de data da construção (habite-se, averbação, conclusão da obra).",
+   "evidencia": {
+    "nivel": "não resolvido",
+    "fontes": []
+   },
+   "fontes": [
+    "regulamento:art382_p6"
+   ]
+  },
+  {
+   "id": "pf_vs_pj_revenda",
+   "tipo": "conceito",
+   "nome": "Revenda de imóveis: quando a PJ passa a valer mais do que a PF",
+   "status": "verificar",
+   "descricao": "Exemplo (venda de R$ 500 mil, ganho de ~R$ 140 mil). PF não contribuinte: só IRPF de 15% sobre o ganho, menos fatores de redução (~R$ 21 mil); isenção de 180 dias uma vez a cada 5 anos. PF contribuinte: soma IBS/CBS sobre a margem (50% de redução e redutor de ajuste; ~R$ 15–20 mil estimados) e ultrapassa ~R$ 35–40 mil. PJ no lucro presumido com atividade imobiliária: IRPJ/CSLL presumidos (8%/12% da receita, ~R$ 11 mil) mais PIS/Cofins de 3,65% até 2026 (~R$ 18 mil) ou IBS/CBS a partir de 2027 (~R$ 15–20 mil), total de ~R$ 26–31 mil. Conclusão: enquanto a PF não aciona os gatilhos, ela é mais barata. A PJ passa a compensar quando a PF vira contribuinte (4+ revendas por ano, ou 2+ imóveis 'construídos' em 5 anos) ou quando se quer escala e separação de risco. As alíquotas de IBS/CBS são estimativas (alíquota de referência ainda não fixada)."
+  },
+  {
+   "id": "decreto12955_2026",
+   "tipo": "norma",
+   "nome": "Decreto 12.955/2026 (Regulamento da CBS - RCBS)",
+   "vigencia": {
+    "inicio": "2026-04-30"
+   },
+   "status": "verificar",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes",
+    "fontes": [
+     "https://serur.com.br/blog/regulamentacao-do-ibs-e-da-cbs-implicacoes-praticas-para-o-mercado-imobiliario",
+     "https://piraciadv.blog/2026/07/"
+    ]
+   }
+  },
+  {
+   "id": "res_cgibs6_2026",
+   "tipo": "norma",
+   "nome": "Resolução CGIBS 6/2026 (Regulamento do IBS - RIBS)",
+   "vigencia": {
+    "inicio": "2026-04-30"
+   },
+   "status": "verificar",
+   "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes",
+    "fontes": [
+     "https://serur.com.br/blog/regulamentacao-do-ibs-e-da-cbs-implicacoes-praticas-para-o-mercado-imobiliario"
+    ]
+   }
+  },
+  {
+   "id": "regulamento:art382_p6",
+   "tipo": "dispositivo",
+   "nome": "RIBS/RCBS art. 382, §6º (conceito de 'construído pelo alienante')",
+   "status": "verificar",
+   "descricao": "Nos regulamentos do IBS e da CBS, o imóvel conta como 'construído pelo alienante' também quando a construção abrange APENAS PARTE DA EDIFICAÇÃO ou é feita EM PARCERIA COM TERCEIROS. A PF não precisa ter construído o imóvel inteiro. Continua em aberto qual evento marca a data da construção para a janela de 5 anos (habite-se, averbação etc.).",
+   "evidencia": {
+    "nivel": "fontes secundárias convergentes (texto do regulamento inacessível no ambiente)",
+    "fontes": [
+     "https://serur.com.br/blog/regulamentacao-do-ibs-e-da-cbs-implicacoes-praticas-para-o-mercado-imobiliario",
+     "https://piraciadv.blog/2026/07/",
+     "https://blog.grupogen.com.br/juridico/postagens/artigos/ibs-cbs-venda-de-imovel/"
+    ]
+   }
+  }
+ ],
+ "arestas": [
+  {
+   "de": "lc214_2025:art251_p1_i",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:art251_p1_ii",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:art251_p1_iii",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:art251_p2",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "lc214_2025:art251_p3",
+   "rel": "parte_de",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "rir2018:art162",
+   "rel": "parte_de",
+   "para": "rir2018"
+  },
+  {
+   "de": "lc227_2026",
+   "rel": "altera",
+   "para": "lc214_2025",
+   "status": "verificar"
+  },
+  {
+   "de": "lc214_2025:art251_p3",
+   "rel": "relacionado",
+   "para": "lc214_2025:art251_p1_ii",
+   "nota": "O corte de 5 anos restringe o gatilho de quantidade."
+  },
+  {
+   "de": "lc214_2025:art251_p2",
+   "rel": "relacionado",
+   "para": "lc214_2025:art251_p1_ii"
+  },
+  {
+   "de": "lc214_2025:art251_p2",
+   "rel": "relacionado",
+   "para": "lc214_2025:art251_p1_iii"
+  },
+  {
+   "de": "lc214_2025:art251_p1_i",
+   "rel": "relacionado",
+   "para": "lc214_2025:contribuinte_pf"
+  },
+  {
+   "de": "lc214_2025:art251_p1_ii",
+   "rel": "relacionado",
+   "para": "lc214_2025:contribuinte_pf"
+  },
+  {
+   "de": "lc214_2025:art251_p1_iii",
+   "rel": "relacionado",
+   "para": "lc214_2025:contribuinte_pf"
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "especializa",
+   "para": "alienacao_imovel"
+  },
+  {
+   "de": "cbs",
+   "rel": "incide_em",
+   "para": "revenda_imovel_reformado",
+   "condicao": {
+    "perfis": [
+     "pf"
+    ]
+   },
+   "vigencia": {
+    "inicio": "2026-01-01"
+   },
+   "status": "verificar",
+   "nota": "Só se a PF acionar um gatilho: (1) mais de 3 revendas no ano-calendário de imóveis adquiridos há menos de 5 anos; ou (2) mais de 1 imóvel 'construído pelo próprio alienante' em 5 anos (pelo regulamento, construção de parte da edificação conta; ampliação ou acréscimo de área quase certamente aciona o gatilho). A operação que ultrapassa o limite já é tributada no mesmo ano. Ex.: 6 revendas em 5 anos (~1–2 por ano) NÃO acionam o gatilho (1).",
+   "fontes": [
+    "lc214_2025:art251_p1_ii",
+    "lc214_2025:art251_p1_iii",
+    "lc214_2025:art251_p2",
+    "lc214_2025:art251_p3",
+    "regulamento:art382_p6"
+   ]
+  },
+  {
+   "de": "ibs",
+   "rel": "incide_em",
+   "para": "revenda_imovel_reformado",
+   "condicao": {
+    "perfis": [
+     "pf"
+    ]
+   },
+   "vigencia": {
+    "inicio": "2026-01-01"
+   },
+   "status": "verificar",
+   "nota": "Mesmos gatilhos da CBS. Se incidir: redução de 50% e redutor de ajuste sobre o valor de aquisição.",
+   "fontes": [
+    "lc214_2025:art251_p1_ii",
+    "lc214_2025:art251_p1_iii",
+    "lc214_2025:art251_p2",
+    "lc214_2025:art251_p3",
+    "regulamento:art382_p6"
+   ]
+  },
+  {
+   "de": "irpj",
+   "rel": "nao_incide_em",
+   "para": "revenda_imovel_reformado",
+   "condicao": {
+    "perfis": [
+     "pf"
+    ]
+   },
+   "status": "verificar",
+   "nota": "A PF que compra, reforma e revende imóveis prontos não é equiparada a PJ para o IR. A equiparação alcança incorporação, loteamento e construção de mais de 2 unidades vendidas em até 60 meses. O lucro segue como ganho de capital no IRPF.",
+   "fontes": [
+    "rir2018:art162"
+   ]
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "relacionado",
+   "para": "reforma_como_construcao",
+   "nota": "Decide se o gatilho de 1 imóvel 'construído' se aplica. Evite averbar acréscimo de área em flips seguidos até haver definição."
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "relacionado",
+   "para": "pf_vs_pj_revenda"
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "relacionado",
+   "para": "isencao_reinvestimento_180d",
+   "nota": "Só uma vez a cada 5 anos: nos demais flips, paga-se 15% sobre o ganho (com fatores de redução)."
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "relacionado",
+   "para": "custo_benfeitorias",
+   "nota": "A reforma com nota fiscal entra no custo e reduz o ganho de capital."
+  },
+  {
+   "de": "revenda_imovel_reformado",
+   "rel": "exige",
+   "para": "gcap",
+   "condicao": {
+    "perfis": [
+     "pf"
+    ]
+   }
+  },
+  {
+   "de": "regulamento:art382_p6",
+   "rel": "parte_de",
+   "para": "res_cgibs6_2026"
+  },
+  {
+   "de": "regulamento:art382_p6",
+   "rel": "parte_de",
+   "para": "decreto12955_2026"
+  },
+  {
+   "de": "regulamento:art382_p6",
+   "rel": "interpreta",
+   "para": "lc214_2025:art251_p1_iii",
+   "status": "verificar"
+  },
+  {
+   "de": "decreto12955_2026",
+   "rel": "relacionado",
+   "para": "lc214_2025"
+  },
+  {
+   "de": "res_cgibs6_2026",
+   "rel": "relacionado",
+   "para": "lc214_2025"
+  }
+ ]
 }

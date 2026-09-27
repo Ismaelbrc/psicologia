@@ -42,6 +42,27 @@ Operações especializadas herdam as regras das mais gerais. Por exemplo:
 - `locacao_residencial` herda de `locacao_imovel`;
 - `incorporacao_imobiliaria` herda de `construcao_obra_propria` e de `alienacao_imovel`.
 
+## Simulador de investimento (pessoa física)
+
+```bash
+python -m tributarista simular imovel                       # 1 imóvel: custos, parcela, fluxo mensal, venda, TIR
+python -m tributarista simular imovel --com-saque --cet-saque 0.11
+python -m tributarista simular estrategias                  # A) segurar  B) saque + próximo  C) flips e depois segurar
+python -m tributarista simular estrategias --valor-pos-reforma 420000 --reforma-com-acrescimo --eventos
+python -m tributarista simular empate-saque                 # CET máximo do saque x portabilidade
+python -m tributarista simular imovel --help                # lista todas as premissas
+```
+
+Todas as premissas são editáveis por linha de comando: preço, entrada, ITBI (padrão de Goiânia, 2%), registro, CET, prazo, Price ou SAC, reforma, valor pós-reforma, aluguel, vacância, administração, IR, saque (LTV, CET, IOF, mês), valorização, corretagem, horizonte, limite de imóveis e prazos do flip. Use `--json` para ter a saída estruturada.
+
+A estratégia de flips emite alertas quando a simulação aciona os gatilhos de IBS/CBS da pessoa física (LC 214, art. 251):
+
+- mais de 3 vendas no ano;
+- 2 vendas em 5 anos com obra de acréscimo (`--reforma-com-acrescimo`);
+- mais de 3 imóveis alugados com receita acima de R$ 240 mil por ano.
+
+As limitações do modelo estão descritas no topo de `tributarista/simulador.py`.
+
 ## Modelo
 
 | Tipo de nó | Exemplos |
